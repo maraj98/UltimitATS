@@ -1,0 +1,15 @@
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.AssemblyInfo.cs
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\UltimitAts.Infrastructure.deps.json
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\UltimitAts.Infrastructure.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\ref\UltimitAts.Infrastructure.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\UltimitAts.Infrastructure.pdb
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\UltimitAts.Data.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\bin\Debug\net5.0\UltimitAts.Data.pdb
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.csproj.CopyComplete
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\ref\UltimitAts.Infrastructure.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts.Infrastructure\obj\Debug\net5.0\UltimitAts.Infrastructure.pdb

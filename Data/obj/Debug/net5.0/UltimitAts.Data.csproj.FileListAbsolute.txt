@@ -1,0 +1,15 @@
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.csproj.AssemblyReference.cache
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.AssemblyInfoInputs.cache
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.AssemblyInfo.cs
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.csproj.CoreCompileInputs.cache
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\UltimitAts.Data.deps.json
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\UltimitAts.Data.runtimeconfig.json
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\UltimitAts.Data.runtimeconfig.dev.json
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\UltimitAts.Data.dll
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\ref\UltimitAts.Data.dll
+C:\Users\User1\source\repos\UltimitAts\Data\bin\Debug\net5.0\UltimitAts.Data.pdb
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.dll
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\ref\UltimitAts.Data.dll
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.pdb
+C:\Users\User1\source\repos\UltimitAts\Data\obj\Debug\net5.0\UltimitAts.Data.genruntimeconfig.cache
