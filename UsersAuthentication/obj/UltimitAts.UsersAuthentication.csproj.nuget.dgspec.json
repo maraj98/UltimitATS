@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj": {}
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\UltimitAts.Data.csproj": {
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\UltimitAts.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\UltimitAts.Data.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\UltimitAts.Data.csproj",
         "projectName": "UltimitAts.Data",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\UltimitAts.Data.csproj",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\UltimitAts.Data.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
         "projectName": "UltimitAts.Infrastructure",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +116,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\UltimitAts.Data.csproj": {
-                "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\Data\\UltimitAts.Data.csproj"
+              "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\UltimitAts.Data.csproj": {
+                "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\Data\\UltimitAts.Data.csproj"
               }
             }
           }
@@ -150,14 +150,14 @@
         }
       }
     },
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj": {
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
         "projectName": "UltimitAts.UsersAuthentication",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,10 +172,10 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "netcoreapp5",
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj"
+              "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj"
               }
             }
           }
@@ -188,7 +188,7 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "netcoreapp5",
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -221,6 +221,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

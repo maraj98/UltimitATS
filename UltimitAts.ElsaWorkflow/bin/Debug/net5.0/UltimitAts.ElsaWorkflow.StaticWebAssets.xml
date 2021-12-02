@@ -1,3 +1,4 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/Elsa.Designer.Components.Web" Path="C:\Users\User1\.nuget\packages\elsa.designer.components.web\2.3.0\build\..\staticwebassets\" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Elsa.Designer.Components.Web" Path="/root/.nuget/packages/elsa.designer.components.web/2.3.0/staticwebassets/" />
 </StaticWebAssets>

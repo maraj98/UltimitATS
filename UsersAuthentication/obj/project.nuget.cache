@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "37BkNckGi79sFtopA2PeHbHOq28JGCbDl/qdKmDQY2PkYCPA+CUOcJW5YbFMhkrwyC+vEcxfcrDEbAni/b4bZg==",
+  "dgSpecHash": "EGZg9kXO4jL7h4oEDzYwFdmddh2d5+EymblcugDrw0UoFuF4HIlSqxVPOBka2QkmR9s0aoQX4OQHdMR2A2E+qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
@@ -39,6 +39,7 @@
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.14.1\\microsoft.identitymodel.tokens.6.14.1.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\User1\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",

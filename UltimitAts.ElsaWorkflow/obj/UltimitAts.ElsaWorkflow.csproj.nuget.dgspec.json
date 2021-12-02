@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj": {}
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj": {
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj",
         "projectName": "UltimitAts.ElsaWorkflow",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.ElsaWorkflow\\UltimitAts.ElsaWorkflow.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.ElsaWorkflow\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.ElsaWorkflow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,6 +71,10 @@
             "Elsa.Server.Api": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

@@ -102,8 +102,9 @@ namespace  UsersAuthentication
 
             app.UseAuthentication();
             app.UseAuthorization();
-             context.Database.Migrate();
-            dbInitializer.Initialize(context);
+           context.Database.Migrate();
+         
+           dbInitializer.Initialize(context);
 
             app.UseEndpoints(x => x.MapControllers());
         }

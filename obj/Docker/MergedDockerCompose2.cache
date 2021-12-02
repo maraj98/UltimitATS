@@ -1,0 +1,226 @@
+services:
+  apigetway:
+    build:
+      context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      dockerfile: ApiGetway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ApiGetway
+      target: base
+    container_name: apigetway
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: apigetway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/ApiGetway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6000
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS\ApiGetway
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      target: /src
+      bind:
+        create_host_path: true
+  db:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: 1Secure*Password1
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: 1445
+      protocol: tcp
+  ultimitats.elsaworkflow:
+    build:
+      context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      dockerfile: UltimitAts.ElsaWorkflow/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: UltimitAts.ElsaWorkflow
+      target: base
+    container_name: ultimitats.elsaworkflow
+    depends_on:
+      db:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ultimitatselsaworkflow:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/UltimitAts.ElsaWorkflow.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6002
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS\UltimitAts.ElsaWorkflow
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      target: /src
+      bind:
+        create_host_path: true
+  ultimitats.usersauthentication:
+    build:
+      context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      dockerfile: UsersAuthentication/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: UltimitAts.UsersAuthentication
+      target: base
+    container_name: ultimitats.usersauthentication
+    depends_on:
+      db:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ultimitatsusersauthentication:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/UltimitAts.UsersAuthentication.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6001
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS\UsersAuthentication
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      target: /src
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose13687128454859328406_default

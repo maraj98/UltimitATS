@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  ultimitats.usersauthentication:
+    container_name: ultimitats.usersauthentication
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "6001:80" 
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+
+  ultimitats.elsaworkflow:
+    container_name: ultimitats.elsaworkflow
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "6002:80" 
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+  apigetway:
+    container_name: apigetway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "6000:80" 
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

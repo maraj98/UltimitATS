@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7ddh1A3piuy6qZwjHSDSIMIR69YGEjnrg802YKVL+nNl5xQE3teSb29Dq+XjeHA+2wilfOddmt6v8Ent4UtSkw==",
+  "dgSpecHash": "yWXs+r2Rotne2oPWw0ziSCKCdg6/kWIj6mUjfwqBnCR3jyDslMMooBdhRmNC0sz6z8X0J+Ju0dkdnsAEdiD6vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

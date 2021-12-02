@@ -1,0 +1,33 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/users/authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ultimitats.usersauthentication",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Authentication",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "FileCacheOptions": { "TtlSeconds": 30 }
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/elsa/home",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ultimitats.elsaworkflow",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Elsa-Workflow",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "FileCacheOptions": { "TtlSeconds": 30 }
+    }
+  ]
+}

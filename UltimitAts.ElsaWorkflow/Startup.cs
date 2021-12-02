@@ -28,7 +28,7 @@ namespace UltimitAts.ElsaWorkflow
 
             services
                 .AddElsa(elsa => elsa
-                    .UseEntityFrameworkPersistence(ef => ef.UseSqlServer("Server=localhost;Database=WorkFlow;Trusted_Connection=True;"))
+                    .UseEntityFrameworkPersistence(ef => ef.UseSqlServer("Server=db;Database=UltimitAts_WorkFlow;User=sa;Password=1Secure*Password1;"))
                     .AddConsoleActivities()
                     .AddHttpActivities(elsaSection.GetSection("Server").Bind)
                     .AddEmailActivities(elsaSection.GetSection("Smtp").Bind)

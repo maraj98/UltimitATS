@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=1Secure*Password1
+    ports:
+      - "1445:1433"
+
+  ultimitats.usersauthentication:
+    image: ${DOCKER_REGISTRY-}ultimitatsusersauthentication
+    build:
+      context: .
+      dockerfile: UsersAuthentication/Dockerfile
+    depends_on:
+      - db
+
+  ultimitats.elsaworkflow:
+    image: ${DOCKER_REGISTRY-}ultimitatselsaworkflow
+    build:
+      context: .
+      dockerfile: UltimitAts.ElsaWorkflow/Dockerfile
+    depends_on:
+      - db
+
+  apigetway:
+    image: ${DOCKER_REGISTRY-}apigetway
+    build:
+      context: .
+      dockerfile: ApiGetway/Dockerfile
+
