@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">UltimitAts.FormBuilder</h1>
+</div>
+<div id="build-wrap"></div>
+<script>
+    jQuery($ => {
+        // on clicking save the form template button
+        const fbEditor = document.getElementById("build-wrap");
+        var options = {
+            onSave: function (evt, formData) {
+                $.ajax({
+                url: '@Url.Action("SaveFormTemplate")',
+                type: 'POST',
+                data: { formData },
+                    success: function (response) {
+                        if (response) {
+                            Swal.fire(
+                                'Success!',
+                                'The form is created successfully!',
+                                'success'
+                            ).then(function () {
+                                window.location.replace("@Url.Action("Forms")");
+                            });
+                        }
+                        else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error',
+                                text: 'Something went wrong, please try again!',
+                            });
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Something went wrong, please try again!',
+                        });
+                    }
+                });
+
+            }
+        };
+        $(fbEditor).formBuilder(options);
+
+    })
+</script>

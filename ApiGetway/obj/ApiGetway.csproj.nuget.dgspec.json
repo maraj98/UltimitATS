@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\ApiGetway\\ApiGetway.csproj": {}
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\ApiGetway\\ApiGetway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\ApiGetway\\ApiGetway.csproj": {
+    "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\ApiGetway\\ApiGetway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\ApiGetway\\ApiGetway.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\ApiGetway\\ApiGetway.csproj",
         "projectName": "ApiGetway",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\ApiGetway\\ApiGetway.csproj",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\ApiGetway\\ApiGetway.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\ApiGetway\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\ApiGetway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,83 @@
+﻿@model Form_Builder.Models.Form
+
+@{
+    ViewData["Title"] = "Submit Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Fill The Form</h1>
+
+<div>
+    <hr />
+    <div class="text-center row w-100">
+        <form id="form" class="w-100">
+            <div id="form-render-wrap" class="w-100">
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Forms">Back to List</a>
+</div>
+
+
+<script>
+    function htmlDecode(input) {
+        var doc = new DOMParser().parseFromString(input, "text/html");
+        return doc.documentElement.textContent;
+    }
+    jQuery($ => {
+        // get the form content and render it
+        let formData = '@Html.DisplayFor(model => model.FormContent)';
+        formData = htmlDecode(formData)
+        $('#form-render-wrap').formRender(
+            {
+                formData,
+                dataType: 'json'
+            }
+        );
+        // save the submission
+        $('#form').on('submit', function (e) {
+            e.preventDefault();
+            // Collect form data
+            var submissionData = $(this).serializeArray();
+            // Send data to server
+            $.ajax({
+                url: '@Url.Action("SubmitForm")',
+                type: 'POST',
+                data: {
+                    formId: @Html.DisplayFor(model => model.Id),
+                    submissionData: JSON.stringify(submissionData),
+                },
+                success: function (response) {
+                    if (response) {
+                        Swal.fire(
+                            'Success!',
+                            'The form is submitted successfully!',
+                            'success'
+                        ).then(function () {
+                            window.location.replace("@Url.Action("ListFormSubmissions", "Home", new { id = Model.Id })");
+                        });
+                    }
+                    else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Something went wrong, please try again!',
+                        });
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Something went wrong, please try again!',
+                    });
+                }
+            });
+            // Prevent form submission
+            return false;
+        });
+    })
+
+</script>

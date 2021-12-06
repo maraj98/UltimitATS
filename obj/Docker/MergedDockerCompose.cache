@@ -3,36 +3,24 @@ services:
     build:
       context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
       dockerfile: ApiGetway/Dockerfile
+    container_name: apigetway
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:80
     image: apigetway
-    networks:
-      default: null
     ports:
-    - mode: ingress
+    - published: 6000
       target: 80
-      published: 6000
-      protocol: tcp
     volumes:
-    - type: bind
-      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
-      target: /root/.aspnet/https
-      read_only: true
-      bind:
-        create_host_path: true
+    - C:\Users\User1\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
   db:
     environment:
       ACCEPT_EULA: "Y"
       SA_PASSWORD: 1Secure*Password1
     image: mcr.microsoft.com/mssql/server:2017-latest
-    networks:
-      default: null
     ports:
-    - mode: ingress
+    - published: 1445
       target: 1433
-      published: 1445
-      protocol: tcp
   ultimitats.elsaworkflow:
     build:
       context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
@@ -45,20 +33,20 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:80
     image: ultimitatselsaworkflow
-    networks:
-      default: null
     ports:
-    - mode: ingress
+    - published: 6002
       target: 80
-      published: 6002
-      protocol: tcp
     volumes:
-    - type: bind
-      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
-      target: /root/.aspnet/https
-      read_only: true
-      bind:
-        create_host_path: true
+    - C:\Users\User1\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+  ultimitats.formbuilder:
+    build:
+      context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
+      dockerfile: UltimitAts.FormBuilder/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ultimitatsformbuilder
+    ports:
+    - target: 80
   ultimitats.usersauthentication:
     build:
       context: C:\Users\User1\source\repos\UltimitAts\UltimitATS
@@ -71,20 +59,9 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:80
     image: ultimitatsusersauthentication
-    networks:
-      default: null
     ports:
-    - mode: ingress
+    - published: 6001
       target: 80
-      published: 6001
-      protocol: tcp
     volumes:
-    - type: bind
-      source: C:\Users\User1\AppData\Roaming/ASP.NET/Https
-      target: /root/.aspnet/https
-      read_only: true
-      bind:
-        create_host_path: true
-networks:
-  default:
-    name: dockercompose13687128454859328406_default
+    - C:\Users\User1\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'

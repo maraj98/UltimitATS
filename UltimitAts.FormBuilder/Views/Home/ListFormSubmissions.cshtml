@@ -1,0 +1,123 @@
+﻿@model Form_Builder.ViewModels.FormDetails
+
+@{
+    ViewData["Title"] = "Form Submissions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>List Of Form Submissions</h1>
+
+<div class="dx-viewport demo-container">
+    <div id="grid-container"></div>
+    <div class="options">
+        <button id="show-on-map-btn" class="hidden btn btn-primary">SHow selected rows' locations on map</button>
+    </div>
+</div>
+
+<script>
+    jQuery($ => {
+        // get the form info 
+        var form = @Html.Raw(Model.Form.FormContent);
+        // get the submissions of the form
+        var submissions = @Html.Raw(Json.Serialize(Model.Submissions));
+        // array of data: contains the submitted values
+        var arrayOfData = [];
+        // names of the columns of the form
+        var columns = [];
+        // boolean to check if the form has a location list
+        var hasLocationList = false
+        // locations selected in all submissions
+        var locationListDataFields = []
+
+        // get the names of the columns and check if the form has a locationList
+        form.forEach(field => {
+            if (!(field.type === 'button')) {
+                var obj = {};
+                obj["dataField"] = field.label
+                columns.push(obj)
+                if (field.type === 'locationList') {
+                    hasLocationList = true
+                    locationListDataFields.push(field.label)
+                }
+            }
+        })
+
+        // get the values of the submissions of the forms
+        for (let i = 0; i < submissions.length; i++) {
+            var submissionData = JSON.parse(submissions[i].submissionData)
+            var obj = {};
+            let j = 0
+            submissionData.forEach(field => {
+                obj[columns[j++].dataField] = field.value
+            })
+
+            arrayOfData.push(obj)
+        }
+
+        // create the DevExtreme data grid
+        var dataGrid = $("#grid-container").dxDataGrid({
+            paging: {
+                pageSize: 10
+            },
+            searchPanel: {
+                visible: true,
+                highlightCaseSensitive: true
+            },
+            selection: {
+                mode: 'multiple',
+                showCheckBoxesMode: hasLocationList ? 'always' : 'none',
+                allowSelectAll: true
+            },
+            dataSource: arrayOfData,
+            showColumnLines: true,
+            showRowLines: true,
+            rowAlternationEnabled: true,
+            showBorders: true,
+            columns: columns
+        }).dxDataGrid("instance");
+
+        // show the "show on map" button if the form has location list input
+        if (hasLocationList) {
+            $('#show-on-map-btn').removeClass('hidden')
+        }
+
+        // requesting to show the submited locations on the map
+        $('#show-on-map-btn').click(() => {
+            var selectedLocations = [];
+            // get the locations from the selected rows
+            dataGrid.getSelectedRowsData().forEach(row => {
+                locationListDataFields.forEach(field => {
+                    selectedLocations.push(row[field]);
+                })
+            });
+            // do a post request to open a pop-up with the map
+            $.ajax({
+                url: '@Url.Action("ShowPointsOnMap")',
+                type: 'POST',
+                data: { selectedLocations },
+                    success: function (response) {
+                        if (response) {
+                            let newWin = window.open('about:blank', 'map', 'width=900,height=900')
+                            let html = response;
+                            newWin.document.write(html);
+                        }
+                        else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error',
+                                text: 'Something went wrong, please try again!',
+                            });
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Something went wrong, please try again!',
+                        });
+                    }
+                });
+        });
+
+    })
+</script>

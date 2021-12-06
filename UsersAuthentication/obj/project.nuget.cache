@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EGZg9kXO4jL7h4oEDzYwFdmddh2d5+EymblcugDrw0UoFuF4HIlSqxVPOBka2QkmR9s0aoQX4OQHdMR2A2E+qw==",
+  "dgSpecHash": "ib+9lx/nlrvkgd9Bz6GNQhEZMAjHyMwnUl3ue42QHJrQbWw9gJOdbxkmllQrXpvA9zXog6TuIJdrEeD+csyDDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+  "projectFilePath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User1\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",

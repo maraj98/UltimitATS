@@ -5697,11 +5697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+      "projectUniqueName": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
       "projectName": "UltimitAts.UsersAuthentication",
-      "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
+      "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UsersAuthentication\\UltimitAts.UsersAuthentication.csproj",
       "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UsersAuthentication\\obj\\",
+      "outputPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UsersAuthentication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5718,8 +5718,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitATS\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj"
+            "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\User1\\source\\repos\\UltimitAts\\UltimitAts\\UltimitAts.Infrastructure\\UltimitAts.Infrastructure.csproj"
             }
           }
         }

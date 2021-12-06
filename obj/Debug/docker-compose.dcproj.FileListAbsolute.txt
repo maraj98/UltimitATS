@@ -120,3 +120,16 @@ C:\Users\User1\source\repos\UltimitAts\UltimitATS\bin\Debug\UltimitAts.Data.pdb
 C:\Users\User1\source\repos\UltimitAts\UltimitATS\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\User1\source\repos\UltimitAts\UltimitATS\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\User1\source\repos\UltimitAts\UltimitATS\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.Views.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.Views.pdb
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.deps.json
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.runtimeconfig.json
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.runtimeconfig.dev.json
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\nlog.config
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\libman.json
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.exe
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\NLog.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\NLog.Web.AspNetCore.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\NLog.Extensions.Logging.dll
+C:\Users\User1\source\repos\UltimitAts\UltimitAts\bin\Debug\UltimitAts.FormBuilder.pdb

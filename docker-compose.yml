@@ -31,3 +31,10 @@ services:
       context: .
       dockerfile: ApiGetway/Dockerfile
 
+
+  ultimitats.formbuilder:
+    image: ${DOCKER_REGISTRY-}ultimitatsformbuilder
+    build:
+      context: .
+      dockerfile: UltimitAts.FormBuilder/Dockerfile
+

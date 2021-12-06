@@ -31,3 +31,11 @@ services:
       - "6000:80" 
     volumes:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+  ultimitats.formbuilder:
+    container_name: ultimitats.formbuilder
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6003:80"
+
